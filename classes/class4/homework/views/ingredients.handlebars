@@ -1,0 +1,18 @@
+<h1>Ingredients Available</h1>
+
+<ul>
+	{{#each ingredients}}
+	<li>{{this.name}}:
+	<ul>
+	<li>Price: {{this.price}}</li>
+	</ul>
+{{/each}}
+</ul>
+
+<form id="ingredient-add" action="ingredients" method="POST">
+Name:<input type="text" name="name"/><br/>
+Price:<input type="number" name="price"/><br/>
+<input type="submit" value="Add Ingredient">
+</form>
+
+
